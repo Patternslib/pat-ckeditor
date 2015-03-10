@@ -1,0 +1,19 @@
+{
+  "name": "pat-ckeditor",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Patternslib/pat-ckeditor",
+  "authors": [
+    "JC Brand <jc@opkode.com>"
+  ],
+  "description": "A Patternslib pattern for CKEditor",
+  "keywords": [
+    "patternslib",
+    "pattern",
+    "ckeditor"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+  ]
+}

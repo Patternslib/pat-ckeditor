@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Patternslib/pat-ckeditor/issues"
   },
-  "homepage": "https://github.com/Patternslib/pat-ckeditor"
+  "homepage": "https://github.com/Patternslib/pat-ckeditor",
+  "dependencies": {
+    "bower": "^1.3.12"
+  }
 }
