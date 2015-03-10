@@ -21,7 +21,9 @@
     "url": "https://github.com/Patternslib/pat-ckeditor/issues"
   },
   "homepage": "https://github.com/Patternslib/pat-ckeditor",
-  "dependencies": {
-    "bower": "^1.3.12"
+  "devDependencies": {
+    "bower": "latest",
+    "requirejs": "",
+    "http-server": "^0.7.3"
   }
 }
