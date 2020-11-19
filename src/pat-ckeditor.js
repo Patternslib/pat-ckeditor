@@ -1,4 +1,3 @@
-import $ from "jquery";
 import "regenerator-runtime/runtime"; // needed for ``await`` support
 import Base from "patternslib/src/core/base";
 import Parser from "patternslib/src/core/parser";
@@ -9,12 +8,17 @@ parser.addArgument("example-option", [1, 2, 3]);
 export default Base.extend({
     name: "ckeditor",
     trigger: ".pat-ckeditor",
+    editor: null,
 
     async init() {
         this.options = parser.parse(this.el, this.options);
-        let external_library = await import("EXTERNAL_LIBRARY");
-        external_library = external_library.default;
+        let CKEditor = await import("@ckeditor/ckeditor5-build-classic");
+        CKEditor = CKEditor.default;
+        this.editor = await CKEditor.create(this.el);
 
-        const example_option = this.options.example - option;
+        this.editor.model.document.on("change:data", () => {
+            // Synchonize text changes with textarea
+            this.el.value = this.editor.getData();
+        });
     },
 });

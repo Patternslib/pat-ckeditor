@@ -8,14 +8,21 @@ describe("pat-ckeditor", () => {
     });
 
     it("is initialized correctly", async (done) => {
-        document.body.innerHTML = `<div class="pat-ckeditor" />`;
+        document.body.innerHTML = `
+            <form>
+                <textarea name="text" class="pat-ckeditor"></textarea>
+            </form>
+        `;
 
-        const instance = pattern.init(
-            document.querySelector(".pat-ckeditor")
-        );
+        const instance = pattern.init(document.querySelector(".pat-ckeditor"));
         await utils.timeout(1);
 
-        expect().toBe("");
+        expect(document.querySelector(".ck")).toBeTruthy();
+        expect(document.querySelector("textarea").value).toBe("");
+
+        // Content updates are synchronized with the textarea.
+        instance.editor.setData("okay");
+        expect(document.querySelector("textarea").value).toBe("<p>okay</p>");
 
         done();
     });
