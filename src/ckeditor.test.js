@@ -1,5 +1,5 @@
 import "regenerator-runtime/runtime"; // needed for ``await`` support
-import pattern from "./pat-ckeditor";
+import pattern from "./ckeditor";
 import utils from "patternslib/src/core/utils";
 
 describe("pat-ckeditor", () => {

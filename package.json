@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "homepage": "https://gitub.com/patternslib/pat-ckeditor",
-  "main": "./src/pat-ckeditor.js",
+  "main": "./src/ckeditor.js",
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^23.1.0",
     "patternslib": "https://github.com/Patternslib/Patterns#master"

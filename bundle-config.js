@@ -1,4 +1,4 @@
-import registry from "patternslib/src/core/registry.js";
-import "./src/pat-ckeditor.js";
+import registry from "patternslib/src/core/registry";
+import "./src/ckeditor";
 
 registry.init();
