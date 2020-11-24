@@ -16,10 +16,3 @@ CKEditor Github: https://github.com/ckeditor/ckeditor5
         <textarea name="text" class="pat-ckeditor"></textarea>
     </form>
 
-
-### Options reference
-
-Property | Default Value | Values | Type | Description
----------|---------------|--------|------|------------
-example_option | [1, 2, 3] | | Array of integers | Example configuration option.
-
