@@ -58,7 +58,7 @@ release-web:
 
 .PHONY: release-major
 release-major: check
-	npx release-it --dry-run --ci && \
+	npx release-it major --dry-run --ci && \
 		npx release-it major --ci  && \
 		make release-web
 
