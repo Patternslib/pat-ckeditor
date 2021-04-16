@@ -5,6 +5,8 @@ YARN   ?= npx yarn
 define get_package_var
 $(shell node -p "require('./package.json').$(1)")
 endef
+PACKAGE_NAME := $(shell node -p "'$(call get_package_var,name)'.replace('@patternslib/', '')")
+PACKAGE_VERSION := $(call get_package_var,version)
 
 
 stamp-yarn:
@@ -39,10 +41,7 @@ bundle: stamp-yarn
 	$(YARN) run build
 
 
-#release-web: clean-dist bundle
-release-web:
-	PACKAGE_NAME=$(shell node -p "'$(call get_package_var,name)'.replace('@patternslib/', '')")
-	PACKAGE_VERSION=$(call get_package_var,version)
+release-web: clean-dist bundle
 	@echo name is $(PACKAGE_NAME)
 	@echo version is $(PACKAGE_VERSION)
 	tar -czf ./$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.gz dist --transform s/dist/$(PACKAGE_NAME)-$(PACKAGE_VERSION)/
