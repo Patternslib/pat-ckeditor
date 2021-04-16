@@ -1,5 +1,5 @@
 import "regenerator-runtime/runtime"; // needed for ``await`` support
-import Base from "patternslib/src/core/base";
+import Base from "@patternslib/patternslib/src/core/base";
 
 export default Base.extend({
     name: "ckeditor",
@@ -7,8 +7,7 @@ export default Base.extend({
     editor: null,
 
     async init() {
-        let CKEditor = await import("@ckeditor/ckeditor5-build-classic");
-        CKEditor = CKEditor.default;
+        const CKEditor = (await import("@ckeditor/ckeditor5-build-classic")).default;
         this.editor = await CKEditor.create(this.el);
 
         this.editor.model.document.on("change:data", () => {
