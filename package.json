@@ -1,7 +1,7 @@
 {
     "name": "@patternslib/pat-ckeditor",
     "version": "0.0.1",
-    "description": "A pattern for .",
+    "description": "A Patternslib pattern for CKEditor.",
     "author": {
         "name": "Syslab GesmbH",
         "email": "dev@syslab.com"
