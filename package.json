@@ -2,12 +2,7 @@
     "name": "@patternslib/pat-ckeditor",
     "version": "1.0.1",
     "description": "A Patternslib pattern for CKEditor.",
-    "author": {
-        "name": "Syslab GesmbH",
-        "email": "dev@syslab.com"
-    },
     "license": "MIT",
-    "homepage": "https://gitub.com/patternslib/pat-ckeditor",
     "main": "./src/ckeditor.js",
     "dependencies": {
         "@ckeditor/ckeditor5-build-classic": "^23.1.0",
@@ -70,5 +65,14 @@
     },
     "publishConfig": {
         "access": "public"
+    },
+    "author": {
+        "name": "Syslab GesmbH",
+        "email": "dev@syslab.com"
+    },
+    "homepage": "https://github.com/patternslib/pat-ckeditor",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/patternslib/pat-ckeditor.git"
     }
 }
