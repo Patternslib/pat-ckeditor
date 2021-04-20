@@ -13,7 +13,6 @@ stamp-yarn:
 	$(YARN) install
 	# Install pre commit hook
 	$(YARN) husky install
-	$(YARN) husky add .husky/commit-msg "yarn commitlint --edit $1"
 	touch stamp-yarn
 
 
@@ -78,7 +77,6 @@ release-patch: check
 
 .PHONY: serve
 serve:: stamp-yarn
-	printf "\n\nGo to http://localhost:8000 to see the demo\n\n\n\n"
 	$(YARN) run start
 
 
