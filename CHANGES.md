@@ -1,3 +1,12 @@
+### [1.1.1](https://github.com/patternslib/pat-ckeditor/compare/1.1.0...1.1.1) (2021-04-23)
+
+
+### Maintenance
+
+* **make release-patch:** Add missing patch for patch level releases. ([cd07f28](https://github.com/patternslib/pat-ckeditor/commit/cd07f2837302256512947271bbb01c60f009178b))
+* **Release:** Remove the release-web target. Only Patternslib releases are pushed to Patterns-releases on Github. ([a0fb81b](https://github.com/patternslib/pat-ckeditor/commit/a0fb81b9742f6fc5179d1fa3a26613f66816c373))
+* **Release process:** Do not include the release commit in the changelog. ([5613de4](https://github.com/patternslib/pat-ckeditor/commit/5613de4be4735550a113dd726ee8abc7abf7803a))
+
 ## [1.1.0](https://github.com/patternslib/pat-ckeditor/compare/1.0.1...1.1.0) (2021-04-20)
 
 
