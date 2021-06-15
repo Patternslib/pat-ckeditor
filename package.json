@@ -5,7 +5,7 @@
     "license": "MIT",
     "main": "./src/ckeditor.js",
     "dependencies": {
-        "@ckeditor/ckeditor5-build-classic": "^27.0.0",
+        "@ckeditor/ckeditor5-build-classic": "^28.0.0",
         "@patternslib/patternslib": "^4.4.0"
     },
     "devDependencies": {
