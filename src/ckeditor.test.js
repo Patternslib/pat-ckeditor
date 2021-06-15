@@ -7,7 +7,7 @@ describe("pat-ckeditor", () => {
         document.body.innerHTML = "";
     });
 
-    it("is initialized correctly", async (done) => {
+    it("is initialized correctly", async () => {
         document.body.innerHTML = `
             <form>
                 <textarea name="text" class="pat-ckeditor"></textarea>
@@ -23,7 +23,5 @@ describe("pat-ckeditor", () => {
         // Content updates are synchronized with the textarea.
         instance.editor.setData("okay");
         expect(document.querySelector("textarea").value).toBe("<p>okay</p>");
-
-        done();
     });
 });
