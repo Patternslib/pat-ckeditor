@@ -1,3 +1,15 @@
+## [1.2.0](https://github.com/patternslib/pat-ckeditor/compare/1.1.1...1.2.0) (2021-06-15)
+
+
+### Maintenance
+
+* Test updates after jest upgrade. ([2fd58f6](https://github.com/patternslib/pat-ckeditor/commit/2fd58f6fd57fade52c0de4a365267781642ea3a1))
+* **dependencies:** Depend on Patternslib v4.4.0. ([6b1da41](https://github.com/patternslib/pat-ckeditor/commit/6b1da412d781689948a52644678002e2cd5295f4))
+* **dependencies:** Upgrade ckeditor to 28.0.0. ([c207e90](https://github.com/patternslib/pat-ckeditor/commit/c207e901fde8206cddbb2041496d67f6cf37f4c5))
+* **dependencies:** Upgrade dependencies on minor+patch level. ([84148f1](https://github.com/patternslib/pat-ckeditor/commit/84148f1cdb2f63a3f917e10e10ce00bbb7ead1ba))
+* **webpack:** Adapt start script to recent dependency changes. ([413829b](https://github.com/patternslib/pat-ckeditor/commit/413829b0116f44d26dc2cf5a7d53f735c9f2b9df))
+* **webpack:** Simplify webpack. ([2ae0465](https://github.com/patternslib/pat-ckeditor/commit/2ae0465a9f34024921b76fe5b7d42b6b35a84c24))
+
 ### [1.1.1](https://github.com/patternslib/pat-ckeditor/compare/1.1.0...1.1.1) (2021-04-23)
 
 
