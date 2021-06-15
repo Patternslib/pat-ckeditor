@@ -1,6 +1,6 @@
 {
     "name": "@patternslib/pat-ckeditor",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "description": "A Patternslib pattern for CKEditor.",
     "license": "MIT",
     "main": "./src/ckeditor.js",
