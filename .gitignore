@@ -5,3 +5,4 @@ yarn.lock
 dist/
 yarn-error.log
 stats.json
+.env
