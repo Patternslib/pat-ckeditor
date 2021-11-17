@@ -1,8 +1,8 @@
 .DS_Store
-node_modules
-stamp-yarn
-yarn.lock
-dist/
-yarn-error.log
-stats.json
 .env
+dist/
+node_modules/
+stamp-yarn
+stats.json
+yarn-error.log
+yarn.lock
