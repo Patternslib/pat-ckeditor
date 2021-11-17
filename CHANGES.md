@@ -1,3 +1,22 @@
+## [2.0.0](https://github.com/patternslib/pat-ckeditor/compare/1.3.0...2.0.0) (2021-11-17)
+
+
+### Breaking Changes
+
+* Re-release under 2.0 as previous 1.3 release was actually a major change due to Webpack 5 upgrade. ([6332ec0](https://github.com/patternslib/pat-ckeditor/commit/6332ec035867dc6f5aa042a608bcfa1057dac830))
+
+
+
+### Maintenance
+
+* **build:** Do an unattended GitHub release and checkout the CHANGES file afterwards since the GitHub release step did change it. ([3bdf4bc](https://github.com/patternslib/pat-ckeditor/commit/3bdf4bc2a10fb18aa99290833d5d71abe875f7ae))
+
+* **build:** Remove .release-it.json. We're using .release-it.js now. ([968cecc](https://github.com/patternslib/pat-ckeditor/commit/968ceccdfe0ff1dba56ce8320f57089b366983fa))
+
+* **dependencies:** Upgrade dev dependencies. ([a0cef93](https://github.com/patternslib/pat-ckeditor/commit/a0cef9385df6f81a3d06ee8f08a243f12824f7b5))
+
+* **dependencies:** Upgrade Patternslib to 6.0.1. ([280c068](https://github.com/patternslib/pat-ckeditor/commit/280c068ab8a7cfe27e1e5c0fe39d7be0c61381c8))
+
 ## 1.3.0 (2021-11-17)
 
 
