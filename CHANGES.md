@@ -1,3 +1,65 @@
+# Changelog
+
+
+
+## [3.0.0-alpha.0](https://github.com/patternslib/pat-ckeditor/compare/2.0.0...3.0.0-alpha.0) (2022-06-15)
+
+
+### Features
+
+
+* **Build:** Build module federation enabled bundles. ([0c7c22f](https://github.com/patternslib/pat-ckeditor/commit/0c7c22f186cffa6256c6979b8a5c8967abfd37b9))
+
+
+### Breaking Changes
+
+
+* Depend on @patternslib/dev and extend config from there. ([1520231](https://github.com/patternslib/pat-ckeditor/commit/1520231746bee968fe94a1ba098a93da048dff9e))
+
+* Extend babel config from @patternslib/dev. ([b2763f8](https://github.com/patternslib/pat-ckeditor/commit/b2763f8fc04780ef78f4bb2174cd41a5c17f772d))
+
+* Extend commitlint config from @patternslib/dev. ([05b8e2a](https://github.com/patternslib/pat-ckeditor/commit/05b8e2a8a771b6605e7275e1d157fa3809b4c28d))
+
+* Extend eslint config from @patternslib/dev. ([bcbcb8f](https://github.com/patternslib/pat-ckeditor/commit/bcbcb8f100dc5fd15129e3d7e7fb515046e3ec29))
+
+* Extend jest config from @patternslib/dev. ([4317c5b](https://github.com/patternslib/pat-ckeditor/commit/4317c5b0587d909a6c04dace74c40eb9cab17d95))
+
+* Extend Makefile from @patternslib/dev. ([3d4b116](https://github.com/patternslib/pat-ckeditor/commit/3d4b116c3ab596f2cc23fc2f553f70b8d40b87b2))
+
+* Extend prettier config from @patternslib/dev. ([bfa8953](https://github.com/patternslib/pat-ckeditor/commit/bfa8953a6748b6963efe40f6b4c23492aa252f51))
+
+* Extend release-it config from @patternslib/dev. ([67a4d6d](https://github.com/patternslib/pat-ckeditor/commit/67a4d6da5f4a55813e0002c792e660a393c15e85))
+
+* Extend webpack config from @patternslib/dev. ([3155d8c](https://github.com/patternslib/pat-ckeditor/commit/3155d8ce0f178f86c6e80fa572f7ed278a760495))
+
+
+### Maintenance
+
+
+* **Build:** @patternslib/patternslib as peerDependency. ([2d3f34b](https://github.com/patternslib/pat-ckeditor/commit/2d3f34b28a9ba54476c00a426520c5f598e2534e))Move @patternslib/patternslib dependency to peerDependencies and set to any version to avoid version conflicts when this package is a dependency of another Patternslib based package.
+
+* **Build:** Add @patternslib/patternslib also to devDependencies so that we get it installed. ([262ae61](https://github.com/patternslib/pat-ckeditor/commit/262ae61cb54cba180f86ff858ec8343d11dc08fc))
+
+* **build:** Add build:dev script to package.json to create a unminified development build. ([cb029c2](https://github.com/patternslib/pat-ckeditor/commit/cb029c2d630455f4bafe2d79425bd77569b4f66d))
+
+* **Build:** Add keyword "patternslib" to package.json. ([f29e735](https://github.com/patternslib/pat-ckeditor/commit/f29e73596832042752335cead52374ea5634f110))
+
+* **Build:** Extend jest.config.js from Patternslib and reuse their setupTests file too. ([ad5b168](https://github.com/patternslib/pat-ckeditor/commit/ad5b16897b2bd08de9eb63fea161e5b044056b30))
+
+* **Build:** Keep yarn.lock in repository. ([85bd5b5](https://github.com/patternslib/pat-ckeditor/commit/85bd5b5789f2e651b15ed84b94099e8445b89cbf))
+
+* **Build:** Makefile - Allow OTP when publishing to npm, build bundles and publish them on GitHub, add pre-release targets. ([6653f88](https://github.com/patternslib/pat-ckeditor/commit/6653f88a4189309f83f14bc79c285b1a2d55ae18))
+
+* **Build:** Remove dependency regenerator-runtime except from test setup. The async/await runtime handling is already built-in in current Babel. ([c9b3174](https://github.com/patternslib/pat-ckeditor/commit/c9b3174cc7172b4d252d199e66a12f7c038a34b8))
+
+* **Build:** Update GitHub actions setup. ([b73c7f1](https://github.com/patternslib/pat-ckeditor/commit/b73c7f1abb70a28f1ebf258339583ed7f287dc57))
+
+* **Build:** Upgrade and cleanup dependencies. ([e2b52b7](https://github.com/patternslib/pat-ckeditor/commit/e2b52b7428b5f903e89d8e7b758339c19bbecc06))
+
+* **Build:** Upgrade ckeditor to 34.1.0. ([028d9de](https://github.com/patternslib/pat-ckeditor/commit/028d9de1643d309374c478fa9a106699cad34e09))
+
+* **webpack:** Configure devServer static directory. ([66dcd05](https://github.com/patternslib/pat-ckeditor/commit/66dcd05c9e9e371ae67056282ca57b23816c0daf))
+
 ## [2.0.0](https://github.com/patternslib/pat-ckeditor/compare/1.3.0...2.0.0) (2021-11-17)
 
 
@@ -92,10 +154,7 @@
 * **Build:** Align with Patternslib v4 changes. ([c0a2238](https://github.com/Patternslib/pat-ckeditor/commit/c0a2238f9539fd850c649495c3f41ce55cc192e7))
 * **Cleanup:** Increase JavaScript line length to 89 characters to make most // prettier-ignore statements obsolete. ([13b80dc](https://github.com/Patternslib/pat-ckeditor/commit/13b80dcde92818972bbb823e590bea8c4a4181b8))
 
-# Changelog
-
 
 ## 1.0.0 - unreleased
 
 - Initial release.
-
