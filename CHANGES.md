@@ -2,6 +2,16 @@
 
 
 
+## [3.0.0](https://github.com/patternslib/pat-ckeditor/compare/3.0.0-alpha.0...3.0.0) (2022-06-28)
+
+
+### Maintenance
+
+
+* @patternslib/patternslib needs to be installed. Adding to devDependencies to avoid version clashes with other packages depending on it. ([d5beb11](https://github.com/patternslib/pat-ckeditor/commit/d5beb11fb5c287248485bc2aaae46683873b3caa))
+
+* Upgrade to @patternslib/dev 2.2.0 and adapt module federation config. ([0eb24c7](https://github.com/patternslib/pat-ckeditor/commit/0eb24c728e00bcad3b157365cc87861cd1e9a9aa))
+
 ## [3.0.0-alpha.0](https://github.com/patternslib/pat-ckeditor/compare/2.0.0...3.0.0-alpha.0) (2022-06-15)
 
 
