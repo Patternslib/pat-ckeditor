@@ -2444,10 +2444,10 @@
     whybundled "^2.0.0"
     yarn "^1.22.19"
 
-"@patternslib/patternslib@9.6.1":
-  version "9.6.1"
-  resolved "https://registry.yarnpkg.com/@patternslib/patternslib/-/patternslib-9.6.1.tgz#41a0df3539242e387b681556a8ae7c26edff5369"
-  integrity sha512-QeemklqcCAaC/Qq7JFm+DUG2wcQOVf8cyfrsbBDee2cvDUyjtDEeehd2KUyJQa1ikWGOAxlB+vSZNdG9jwbQNA==
+"@patternslib/patternslib@>= 9.7.0-alpha.2":
+  version "9.7.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@patternslib/patternslib/-/patternslib-9.7.0-alpha.2.tgz#7f5b0698059c180412d1a86562b05b612bb6f6ee"
+  integrity sha512-Pdkk1i799YSKUiwkLpVoVI/LppE5140AoYjBc7wgGadRuG7e7EkIGfA1sHQHMmoR/K+qbQsp7DAxsB1g7So7QQ==
   dependencies:
     "@fullcalendar/adaptive" "^5.11.3"
     "@fullcalendar/core" "^5.11.3"
@@ -2458,17 +2458,22 @@
     "@fullcalendar/timegrid" "^5.11.3"
     "@juggle/resize-observer" "^3.4.0"
     "@stomp/stompjs" "^6.1.2"
+    dompurify "^2.4.0"
     google-code-prettify "^1.0.5"
+    highlight.js "<11"
     imagesloaded "^4.1.4"
     intersection-observer "^0.12.2"
     jquery "^3.6.1"
     jquery-jcrop "^0.9.13"
     luxon "2.4.0"
+    marked "^4.1.1"
     masonry-layout "^4.2.2"
     moment "^2.29.4"
-    moment-timezone "^0.5.37"
+    moment-timezone "^0.5.38"
     photoswipe "^4.1.3"
     pikaday "^1.8.0"
+    prettier "^2.7.1"
+    prismjs "^1.29.0"
     promise-polyfill "^8.2.3"
     screenfull "^6.0.2"
     select2 "^3.5.1"
@@ -4500,6 +4505,11 @@ domexception@^4.0.0:
   dependencies:
     webidl-conversions "^7.0.0"
 
+dompurify@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.4.0.tgz#c9c88390f024c2823332615c9e20a453cf3825dd"
+  integrity sha512-Be9tbQMZds4a3C6xTmz68NlMfeONA//4dOavl/1rNw50E+/QO0KVpbcU0PcaW0nsQxurXls9ZocqFxk8R2mWEA==
+
 dot-prop@^5.1.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.3.0.tgz#90ccce708cd9cd82cc4dc8c3ddd9abdd55b20e88"
@@ -5579,6 +5589,11 @@ has@^1.0.3:
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
+
+highlight.js@<11:
+  version "10.7.3"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
+  integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
 
 hosted-git-info@^2.1.4:
   version "2.8.9"
@@ -7028,6 +7043,11 @@ map-obj@^4.0.0:
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-4.3.0.tgz#9304f906e93faae70880da102a9f1df0ea8bb05a"
   integrity sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==
 
+marked@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.1.1.tgz#2f709a4462abf65a283f2453dc1c42ab177d302e"
+  integrity sha512-0cNMnTcUJPxbA6uWmCmjWz4NJRe/0Xfk2NhXCUHjew9qJzFN20krFnsUe7QynwqOwa5m1fZ4UDg0ycKFVC0ccw==
+
 masonry-layout@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/masonry-layout/-/masonry-layout-4.2.2.tgz#d57b44af13e601bfcdc423f1dd8348b5524de348"
@@ -7200,7 +7220,7 @@ modify-values@^1.0.0:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
-moment-timezone@^0.5.37:
+moment-timezone@^0.5.38:
   version "0.5.38"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.38.tgz#9674a5397b8be7c13de820fd387d8afa0f725aad"
   integrity sha512-nMIrzGah4+oYZPflDvLZUgoVUO4fvAqHstvG3xAUnMolWncuAiLDWNnJZj6EwJGMGfb1ZcuTFE6GI3hNOVWI/Q==
@@ -7899,6 +7919,11 @@ pretty-format@^29.2.0:
     "@jest/schemas" "^29.0.0"
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
+
+prismjs@^1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
