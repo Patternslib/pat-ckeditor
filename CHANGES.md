@@ -2,6 +2,20 @@
 
 
 
+## [3.2.0](https://github.com/patternslib/pat-ckeditor/compare/3.1.0...3.2.0) (2022-10-17)
+
+
+### Bug Fixes
+
+
+* Fix initialization of Module Federation. This is done by the plone main/host bundle. ([598ded1](https://github.com/patternslib/pat-ckeditor/commit/598ded13057ea37bddbc26d7c4f56c049a15d3a9))
+
+
+### Maintenance
+
+
+* Switch to class based pattern. ([8c8ff60](https://github.com/patternslib/pat-ckeditor/commit/8c8ff605322f615480366cae0595732e0722e4a5))
+
 ## [3.0.0](https://github.com/patternslib/pat-ckeditor/compare/3.0.0-alpha.0...3.0.0) (2022-06-28)
 
 
