@@ -1,9 +1,14 @@
-import Base from "@patternslib/patternslib/src/core/base";
+import { BasePattern } from "@patternslib/patternslib/src/core/basepattern";
+import Parser from "@patternslib/patternslib/src/core/parser";
+import registry from "@patternslib/patternslib/src/core/registry";
 
-export default Base.extend({
-    name: "ckeditor",
-    trigger: ".pat-ckeditor",
-    editor: null,
+export const parser = new Parser("ckeditor");
+
+class Pattern extends BasePattern {
+    static name = "ckeditor";
+    static trigger = ".pat-ckeditor";
+    parser = parser;
+    editor = null;
 
     async init() {
         const CKEditor = (await import("@ckeditor/ckeditor5-build-classic")).default;
@@ -13,5 +18,10 @@ export default Base.extend({
             // Synchonize text changes with textarea
             this.el.value = this.editor.getData();
         });
-    },
-});
+    }
+}
+
+registry.register(Pattern);
+
+export default Pattern;
+export { Pattern };

@@ -1,5 +1,5 @@
-import pattern from "./ckeditor";
-import utils from "@patternslib/patternslib/src/core/utils";
+import Pattern from "./ckeditor";
+import events from "@patternslib/patternslib/src/core/events";
 
 describe("pat-ckeditor", () => {
     beforeEach(() => {
@@ -13,8 +13,8 @@ describe("pat-ckeditor", () => {
             </form>
         `;
 
-        const instance = pattern.init(document.querySelector(".pat-ckeditor"));
-        await utils.timeout(1);
+        const instance = new Pattern(document.querySelector(".pat-ckeditor"));
+        await events.await_pattern_init(instance);
 
         expect(document.querySelector(".ck")).toBeTruthy();
         expect(document.querySelector("textarea").value).toBe("");
