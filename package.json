@@ -4,6 +4,7 @@
     "description": "A Patternslib pattern for CKEditor.",
     "license": "MIT",
     "main": "./src/ckeditor.js",
+    "packageManager": "pnpm@12.16.1",
     "dependencies": {
         "@ckeditor/ckeditor5-build-classic": "^35.2.1"
     },
