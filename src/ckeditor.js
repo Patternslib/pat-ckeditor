@@ -12,7 +12,9 @@ class Pattern extends BasePattern {
 
     async init() {
         const CKEditor = (await import("@ckeditor/ckeditor5-build-classic")).default;
-        this.editor = await CKEditor.create(this.el);
+        this.editor = await CKEditor.create(this.el, {
+            licenseKey: "GPL",
+        });
 
         this.editor.model.document.on("change:data", () => {
             // Synchonize text changes with textarea
